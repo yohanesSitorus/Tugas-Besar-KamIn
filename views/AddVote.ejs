@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,1,0" />
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/default-styling.css">
+    <link rel="stylesheet" href="/css/form-styling.css">
+    <link rel="stylesheet" href="/css/AddVote.css">
+  
+</head>
+
+<body>
+    <header>
+        <h1>Add Vote</h1>
+    </header>
+  
+    <main>
+        <form action="/submit-vote" method="post">
+            <label for="voteOption">Topik Kamin</label>
+            <div class="vote-info">
+                <p>Banyak Anggota: 4</p>
+                <p>Status: Active</p>
+                <p>Keterangan: Pemilihan topik tubes Kamin</p>
+            </div>
+            <select id="voteOption" name="voteOption">
+                <option value="option1">RSA</option>
+                <option value="option2">Option 2</option>
+                <option value="option3">Option 3</option>
+            </select>
+            
+            <button type="submit">Vote</button>
+        </form>
+    </main>
+
+</body>
+
+
+</html>

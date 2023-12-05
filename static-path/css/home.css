@@ -1,0 +1,41 @@
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .top-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .bottom-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .voting-box {
+    border: 1px solid #ccc;
+    padding: 50px;
+    margin-right: 20px;
+    text-align: center;
+  }
+  
+  .voting-box h2 {
+    margin-bottom: 10px;
+  }
+  
+  .top-section .voting-box:last-child {
+    margin-right: 0;
+  }
+
+  .request-section {
+    text-align: left;
+    margin-bottom: 20px; 
+  }
+  
