@@ -146,23 +146,31 @@ input[type='submit'] {
 }
 
 #create_button {
-  margin-top: -325%;
-  background-color: #0EA5E9; /* Dark blue button color */
-  color: #f2f6ff;
-  padding: 0.4rem;
-  border: 1px solid #0EA5E9;
-  border-radius: 3px;
-  margin-left: -5%;
-  display: inline-block; /* Set to inline-block to make it a button-like element */
-  text-decoration: none; /* Remove underline for links */
-  white-space: nowrap; /* Prevent text from wrapping to the next line */
+  /* Tampilan dasar tombol */
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: 2px solid #1b479d;
+  border-radius: 5px;
+  color: #1b479d;
+  background-color: white;
+  transition: background-color 0.3s, color 0.3s;
+  margin-top: -150%;
+  
+  &:hover {
+    background-color: #1b479d;
+    color: white;
+  }
+
+  /* Efek aktif (ditekan) */
+  &:active {
+    transform: translateY(2px);
+  }
 }
 
-#create_button:hover {
-  background-color: #0EA5E9; /* Dark blue hover color */
-  border: 1px solid #0EA5E9;
-  cursor: pointer;
-}
 .voting-box h2 {
   color: white;
 }
@@ -171,4 +179,40 @@ input[type='submit'] {
   border-width: 1%;
 
 } */
+
+h1{
+  margin-left: -55%;
+  margin-top: 1%;
+  font-size: larger;
+  color:#1b479d;
+}
+#loginform{
+  color:#1b479d;
+}
+
+#submit {
+  /* Tampilan dasar tombol */
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: 2px solid #1b479d;
+  border-radius: 5px;
+  color: #1b479d;
+  background-color: white;
+  transition: background-color 0.3s, color 0.3s;
+  margin-top: 10%;
+  
+  &:hover {
+    background-color: #1b479d;
+    color: white;
+  }
+
+  /* Efek aktif (ditekan) */
+  &:active {
+    transform: translateY(2px);
+  }
+}
 

@@ -1,82 +1,74 @@
-body {
-    font-family: 'Arial', sans-serif;
+
+body,
+h1,
+p,
+form {
     margin: 0;
     padding: 0;
-    background-color: #4F8099; /* Darker background color to match the previous design */
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f0f0;
 }
 
 header {
-    background-color: #05293C; /* Dark blue color */
-    color: white;
+    background-color: #333;
+    color: #fff;
     text-align: center;
-    padding: 25px;
-    margin-bottom: 5%;
+    padding: 10px;
 }
 
 main {
     max-width: 600px;
     margin: 20px auto;
-    background-color: #B6CAD5; /* Light blue background color */
+    background-color: #fff;
     padding: 20px;
-    border-radius: 5px;
+    border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 form {
-    
     display: flex;
     flex-direction: column;
-    align-items: center;
-    background-color: #B6CAD5;
 }
 
 label {
-    margin-bottom: 10px;
+    font-size: 18px;
+    margin-bottom: 8px;
 }
 
-select {
+.vote-info {
+    margin-bottom: 16px;
+}
+
+select,
+button {
+    font-size: 16px;
     padding: 10px;
-    margin-bottom: 20px;
-    width: 100%;
-    box-sizing: border-box;
+    margin-bottom: 16px;
 }
 
 button {
+    display: block;
+    width: 100%; 
     padding: 10px;
-    background-color: #0EA5E9; /* Darker blue button color */
-    color: white;
-    border: none;
-    cursor: pointer;
-    width: 100%;
-    box-sizing: border-box;
-}
-
-footer {
+    font-size: 16px;
     text-align: center;
-    padding: 10px;
-    background-color: #0EA5E9; /* Dark blue color */
+    text-decoration: none;
+    cursor: pointer;
+    border: 2px solid #3498db;
+    border-radius: 5px;
+    color: #3498db;
+    background-color: white;
+    transition: background-color 0.3s, color 0.3s;
+}
+button:hover {
+    background-color: #3498db;
     color: white;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
+  }
+  
+button:active {
+    transform: translateY(2px);
+  }
 
-#topik{
-    margin-left: -82%;
-}
-#banyak_anggota{
-    margin-left: -142%;
-}
-#status{
-    margin-left: -153%;
-    margin-top: 3%;
-}
-#ket{
-    margin-left: -87%;
-    margin-top: 3%;
-    margin-bottom: 5%;;
-}
-    
-main{
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
-}
