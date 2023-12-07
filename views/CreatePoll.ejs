@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/reset.css">
+  <link rel="stylesheet" href="/css/default-styling.css">
+  <link rel="stylesheet" href="/css/form-styling.css">
+  <link rel="stylesheet" href="/css/home.css">
+    <title>Create Vote</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+        #data{
+   display: flex;
+   flex-direction: column; /* Ganti menjadi column agar form dan sidebar tampil satu di bawah yang lain */
+   padding: 1rem; /* Tambahkan padding agar kontennya tidak terlalu dekat dengan pinggir */
+   grid-column: 2;
+}
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+
+        <section id="left-sidebar">
+            <h2>Selamat Datang, ${nama-lengkap}.</h2>
+            <%- include('nav-link/sidebar'); %>
+        </section>
+        <section id="data">
+    <h2>Create Vote</h2>
+   
+    <form id="createVoteForm">
+        
+
+        <label for="voteName">Vote Name:</label>
+        <input type="text" id="voteName" name="voteName" required>
+
+        <label for="numMembers">Number of Members:</label>
+        <select id="numMembers" name="numMembers" onchange="updateMemberCount()">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <!-- Add more options as needed -->       </select>
+
+        <div id="membersDetails">
+            <!-- Member details will be displayed here based on selection -->
+        </div>
+
+        <label for="voteDescription">Vote Description:</label>
+        <textarea id="voteDescription" name="voteDescription" rows="4"></textarea>
+
+        <button type="submit">Create Vote</button>
+    </form>
+</section>
+    <!-- <script>
+        function updateMemberCount() {
+            var numMembers = document.getElementById("numMembers").value;
+            var membersDetails = document.getElementById("membersDetails");
+
+            // Clear previous content
+            membersDetails.innerHTML = "";
+
+            for (var i = 1; i <= numMembers; i++) {
+                var memberLabel = document.createElement("label");
+                memberLabel.textContent = "Member " + i + " Name:";
+                membersDetails.appendChild(memberLabel);
+
+                var memberInput = document.createElement("input");
+                memberInput.type = "text";
+                memberInput.name = "member" + i + "Name";
+                memberInput.required = true;
+                membersDetails.appendChild(memberInput);
+            }
+        }
+    </script> -->
+</div>
+</body>
+</html>

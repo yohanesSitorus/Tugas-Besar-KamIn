@@ -93,3 +93,8 @@ app.get('/AddVote', async (req, res) => {
     res.render('AddVote');
     
 })
+
+app.get('/CreatePoll', async (req, res) => {
+    res.render('CreatePoll');
+    
+})
