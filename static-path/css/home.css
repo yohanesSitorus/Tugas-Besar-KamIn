@@ -72,11 +72,11 @@ body {
 
 #request {
   font-size: 1.2em;
-  color: #FFFFFF;
-  background-color: #3498db;
-  padding: 10px;
+  color: #313131;
+  /* background-color: #3498db; */
+  /* padding: 10px; */
   border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
   
 }
 body {
