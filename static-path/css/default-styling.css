@@ -1,76 +1,63 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
 
-/* Start styling */
+/* Reset some default styles */
 * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
+  background-color: #4F8099; /* Light blue background color */
 }
 
-button:hover,
+/* button:hover,
 input[type='submit']:hover {
-  color: black;
-  background-color: white;
-  border: 1px solid black;
+  color: white;
+  background-color: #0038ff;
+  border: 1px solid #0038ff;
   cursor: pointer;
-}
+} */
 
-button,
+/* button,
 input[type='submit'] {
   padding: 0.4rem;
-  background-color: rgb(0, 0, 0);
-  border: 1px solid rgb(0, 0, 0);
+  background-color: #0056ff;
+  border: 1px solid #0056ff;
   color: white;
   border-radius: 3px;
-  margin-right: 0;
-}
+} */
 
-/* Jika a link tidak ada class reset warnanya jadi hitam */
-a:is([class]) {
-  color: black;
-}
-
-/* Default link color */
-a {
+/* a {
   color: #0038ff;
   margin-right: 1rem;
-}
-button,
-a {
   font-weight: 450;
-}
+} */
 
-a:last-child {
+/* a:last-child {
   margin: 0;
-}
+} */
+
 .hidden {
   display: none !important;
 }
 
-.brandName {
-  /* 24px */
+/* .brandName {
   font-size: 1.5rem;
   font-weight: 700;
-}
-a {
-  list-style: none;
-}
+  color: #0038ff;
+} */
 
-#SignInButton:hover {
-  padding: 0.4rem;
-  color: white;
-  background-color: black;
-  border: 1px solid white;
-  border-radius: 0.5rem;
-  margin-right: 0;
-}
+/* #SignInButton:hover,
 #SignInButton {
   padding: 0.4rem;
-  color: black;
-  background-color: white;
-  border: 1px solid black;
+  border: 1px solid #0038ff;
   border-radius: 0.5rem;
   margin-right: 0;
-}
+  color: #0038ff;
+} */
 
 #wrapper {
   display: grid;
@@ -79,58 +66,153 @@ a {
 
 #left-sidebar {
   padding: 1rem;
-  height: 100vh;
+  min-height: 100vh; /* Set to min-height to ensure it takes at least the full viewport height */
   align-items: center;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  border-right: 2px solid rgb(0, 0, 0);
+  justify-content: space-between; /* Push content to the top and bottom */
+  border-right: 2px solid #05293C;
+  background-color: #05293C; /* Darker background color */
 }
 
-#left-sidebar > :nth-child(1) {
-  margin-bottom: 2rem;
-}
+/* .menu-routing {
+  margin: 1rem 0;
+  padding: 0.4rem;
+  text-align: center;
+  border: 2px solid #0038ff;
+  border-radius: 10px;
+  max-width: fit-content;
+  display: flex;
+} */
+
 .links-container {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.menu-routing {
-  margin: 1rem 0;
-  padding: 0.4rem;
-  text-align: center;
-  border: 2px solid black;
-  border-radius: 10px;
-  max-width: fit-content;
-  display: flex;
-}
-
-/* Admin-home */
-
-
 #main-menu {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 2rem; /* Add margin to separate from the title */
+  margin-top: 2rem;
 }
 
 .grid-container {
-  width: 80%; /* Adjust the width as needed */
-  max-width: 800px; /* Set a maximum width to avoid excessive width on larger screens */
-  margin: auto; /* Center the grid horizontally */
+  width: 80%;
+  max-width: 800px;
+  margin: auto;
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* 4 columns */
-  grid-template-rows: repeat(5, 1fr); /* 5 rows */
-  grid-gap: 10px; /* Adjust the gap between grid items */
-  overflow: auto; /* Add scrollbar if necessary */
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-gap: 10px;
+  overflow: auto;
 }
 
 .grid-item {
   padding: 20px;
-  border: 1px solid #ccc; /* Add borders for better visualization */
-  box-sizing: border-box; /* Include padding in the total width/height */
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  background-color: #f2f6ff; /* Light blue grid item background color */
 }
 
+#judul {
+  padding: 25%;
+  margin-top: 10%;
+  color: whitesmoke;
+}
+
+.voting-box {
+  color: #0056ff;
+  padding: 10%;
+  margin-left: 10%;
+}
+
+#judul1{
+  margin-left: 100%;
+}
+#judul2{
+  margin-left: 105%;
+}
+#request{
+  margin-left: -85%;
+  font-weight: bold;
+  color: #f2f6ff;
+}
+#Selamat{
+  margin-top: 20%;
+  color: #f2f6ff;
+  margin-left: 20%;
+}
+
+#create_button {
+  /* Tampilan dasar tombol */
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: 2px solid #1b479d;
+  border-radius: 5px;
+  color: #1b479d;
+  background-color: white;
+  transition: background-color 0.3s, color 0.3s;
+  margin-top: -150%;
+  
+  &:hover {
+    background-color: #1b479d;
+    color: white;
+  }
+
+  /* Efek aktif (ditekan) */
+  &:active {
+    transform: translateY(2px);
+  }
+}
+
+.voting-box h2 {
+  color: white;
+}
+/* .top-section{
+  border-bottom: 2px solid #f2f6ff;
+  border-width: 1%;
+
+} */
+
+h1{
+  margin-left: -55%;
+  margin-top: 1%;
+  font-size: larger;
+  color:#1b479d;
+}
+#loginform{
+  color:#1b479d;
+}
+
+#submit {
+  /* Tampilan dasar tombol */
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: 2px solid #1b479d;
+  border-radius: 5px;
+  color: #1b479d;
+  background-color: white;
+  transition: background-color 0.3s, color 0.3s;
+  margin-top: 10%;
+  
+  &:hover {
+    background-color: #1b479d;
+    color: white;
+  }
+
+  /* Efek aktif (ditekan) */
+  &:active {
+    transform: translateY(2px);
+  }
+}
 

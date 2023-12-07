@@ -1,17 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,1,0" />
-    <link rel="stylesheet" href="/css/reset.css">
-    <link rel="stylesheet" href="/css/default-styling.css">
-    <link rel="stylesheet" href="/css/form-styling.css">
+  <meta charset="UTF-8">
+  <title>Halaman Voting</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,1,0" />
+  <!-- <link rel="stylesheet" href="/css/reset.css"> -->
+  <link rel="stylesheet" href="/css/home.css">
+  <!-- <link rel="stylesheet" href="/css/form-styling.css">
+  <link rel="stylesheet" href="/css/home.css"> -->
 </head>
-
 <body>
-    <div id="wrapper">
-        <section id="left-sidebar">
-            <h2>Selamat Datang, ${nama-lengkap}.</h2>
-            <%- include('nav-link/sidebar'); %>
-              
-        
+  <div id="wrapper">
+  <section id="left-sidebar">
+    <h2 id="Selamat">Selamat Datang, ${nama-lengkap}.</h2>
+    <%- include('nav-link/sidebar'); %>
+</section>
+<div class="container">
+  <div class="top-section">
+    <div class="voting-box" id="judul1">
+      <a href="/addvote">
+        <h2>Judul Voting 1</h2>
+        <img src="gambar1.jpg" alt="Gambar 1">
+      </a>
     </div>
+    <div class="voting-box">
+      <a href="/addvote">
+        <h2>Judul Voting 2</h2>
+        <img src="gambar1.jpg" alt="Gambar 1">
+      </a>
+    </div>
+    <div class="voting-box">
+      <a href="/addvote">
+        <h2>Judul Voting 3</h2>
+        <img src="gambar1.jpg" alt="Gambar 1">
+      </a>
+    </div>
+  </div>
+  <div class="request-section">
+    <p id="request">Request</p>
+  </div>
+  <div class="bottom-section">
+    <div class="voting-box" id="judul2">
+      <a href="/addvote">
+        <h2>Judul Voting 5</h2>
+        <img src="gambar5.jpg" alt="Gambar 5">
+      </a>
+    </div>
+    <div class="voting-box">
+      <a href="/addvote">
+        <h2>Judul Voting 6</h2>
+        <img src="gambar5.jpg" alt="Gambar 5">
+      </a>
+    </div>
+    <div class="voting-box">
+      <a href="/addvote">
+        <h2>Judul Voting 7</h2>
+        <img src="gambar5.jpg" alt="Gambar 5">
+      </a>
+    </div>
+  </div>
+</div>
+
+  </div>
+
 </body>
+</html>
