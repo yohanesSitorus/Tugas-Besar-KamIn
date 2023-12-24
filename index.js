@@ -37,11 +37,15 @@ app.listen(port, () => {
 // });
 
 app.get('/', async (req, res) => {
-    res.redirect('/home');
+    res.render('home')
+    // res.redirect('home');
     // res.render('layout')
 })
 
-app.get('/home', async (req, res) => {
-    res.render('home');
-    // res.render('layout')
+app.get('/login', async (req, res) => {
+    res.render('login');
+})
+
+app.get('/signup', async (req, res) => {
+    res.render('signup');
 })
